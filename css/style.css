@@ -1,0 +1,26 @@
+body {
+    min-width: 1252px;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: #849d8f;
+}
+
+.site-wrapper {
+    min-width: 1252px;
+    background-color: #849d8f;
+}
+
+.content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 26px;
+}
+
+.header-logo a {
+    display: block;
+    width: 154px;
+    height: 64px;
+    background: url("../img/header-logo.png") no-repeat;
+    font-size: 0;
+}
