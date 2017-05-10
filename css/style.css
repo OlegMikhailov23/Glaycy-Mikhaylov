@@ -6,6 +6,22 @@ body {
     background-color: #849d8f;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 .site-wrapper {
     min-width: 1252px;
     background-color: #849d8f;
@@ -17,6 +33,73 @@ body {
     padding: 0 26px;
 }
 
+.header-logo {
+  padding-top: 9px;
+  float: left;
+}
+
+.main-navigation {
+  float: left;
+  width: 450px;
+  padding-top: 23px;
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 8px;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation .main-menu-item {
+  display: inline-block;
+  object-position: relative;
+  font-size: 16px;
+}
+
+.main-navigation .sub-menu {
+  position: absolute;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.sub-menu li:first-of-type a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.main-menu-item .main-menu-item-link {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 7px 15px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #acc3b6;
+}
+
+.main-navigation a:hover {
+  text-decoration: none;
+  background: #f7f6f3;
+  border-radius: 20px;
+}
+
+.main-navigation a:active {
+  box-shadow: inset 0 2px 2px 0 rgba( 0, 0, 0, 0.3);
+}
+
+.main-navigation span {
+  color: #ffffff;
+}
+
+.main-navigation a:hover span {
+  color: #333333;
+}
+
 .header-logo a {
     display: block;
     width: 154px;
@@ -24,3 +107,98 @@ body {
     background: url("../img/header-logo.png") no-repeat;
     font-size: 0;
 }
+
+.costumer-block {
+    float: right;
+    padding-left: 8px;
+    width: 270px;
+    padding-top: 23px;
+    font-size: 0;
+}
+
+.costumer-block .header-btn {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.costumer-block .header-btn:not(:last-child):hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.costumer-block .header-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+ .costumer-block .search-btn {
+   width: 31px;
+   height: 31px;
+   font-size: 0;
+   background-image: url("../img/sprite.png");
+   background-repeat: no-repeat;
+   background-position: -157px -73px;
+}
+
+.costumer-block .search-btn:hover {
+  background-position: -157px -130px; 
+}
+
+.signin-btn:hover::before {
+  background-position: -220px -76px;
+}
+
+.basket-btn:hover::before {
+  
+}
+
+.signin-btn, 
+.basket-btn {
+  position: relative;
+  padding-left: 45px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.signin-btn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 23px;
+    top: 3px;
+    left: 15px;   
+    background-image: url("../img/sprite.png");
+    background-position: -213px -17px;
+}
+
+.basket-btn:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/sprite.png");
+    background-position: -90px -17px;
+    top: 3px;
+    left: 15px;
+}
+
+.basket-btn {
+  padding-right: 34px;
+}
+
+
+
+
+.header-info {
+  display: none;
+}
+
