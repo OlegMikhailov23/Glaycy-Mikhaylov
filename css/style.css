@@ -191,7 +191,7 @@ body > input[type="radio"] {
     line-height: 18px;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
-    color: #acc3b6;
+    color: rgba( 255, 255, 255, 0.3);
 }
 
 .main-menu-item > a:hover {
@@ -520,4 +520,180 @@ body > input[type="radio"] {
     position: absolute;
     right: 20px;
     bottom: 25px;
+}
+
+.popular {
+      margin-top: 40px;
+      font-size: 0;
+}
+
+.popular-item {
+    display: inline-block;
+    position: relative;  
+    vertical-align: top;
+    margin-right: 26px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.popular-item:hover img {
+   transform: scale(1.05);
+   transition: 0.3s;  
+}
+
+.popular-item:last-child {
+    margin-right: 0;
+}
+
+.popular-item-price {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    text-shadow: 0 1px 3px rgba(51, 51, 51, 0.5);
+}
+
+.popular-item-price-rubels {
+   font-size: 45px;
+   line-height: 46px;
+   font-weight: 500;
+  
+}
+
+.popular-item a {
+    display: block;
+    width: 267px;
+    padding-top: 6px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.popular-item a:hover {
+    color: rgba(255, 204, 153, 0.3);
+}
+
+.popular-item a:active {
+    color: rgba(255, 204, 153, 0.3)
+}
+
+.popular-item-link span {
+    color: #ffffff;
+}
+
+.popular-item-link:hover span {
+   color: #ffcc99;
+}
+
+.popular-item-link:active span {
+    color: #ffcc99;
+}
+
+.popular-item-price-weight {
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.advantage {
+    width: 100%;
+    height: 306px;
+    margin-top: 38px;
+    padding: 25px 19px;
+    border-radius: 15px;
+    background-image: url("../img/waffel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.advantage h2 {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 23px;;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.advantage p {
+    padding: 0;
+    margin: 0;
+    padding-left: 55px;
+    width: 540px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.advantage ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantage li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 540px;
+    
+}
+
+.advantage li:nth-child(odd) {
+    margin-right: 25px;
+}
+
+.advantage li:first-child {
+    padding-bottom: 25px;
+}
+
+.advantage li:first-child::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: -17px; 
+    background-image: url("../img/mini-ice-cream.png");
+}
+
+.advantage li:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    top: -17px; 
+    background-image: url("../img/cow.png");
+    background-repeat: no-repeat;
+}
+
+.advantage li:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    top: -17px; 
+    background-image: url("../img/leaf.png");
+    background-repeat: no-repeat;
+}
+
+.advantage li:last-child::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    top: -17px; 
+    background-image: url("../img/thermometr.png");
+    background-repeat: no-repeat;
 }
