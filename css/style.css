@@ -834,3 +834,153 @@ body > input[type="radio"] {
     margin-top: 23px;
     text-align: center;
 }
+
+.main-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-footer-social {
+    float: left;
+    padding-top: 13px;
+    width: 190px;
+    height: 40px;
+    font-size: 0;
+}
+
+.social-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 38px;
+    height: 38px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background-image: url("../img/sprite.png");
+}
+
+.social-btn:hover {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
+.social-btn:active {
+    box-shadow: inset 0 2px 0 1px #999999;
+}
+
+.social-btn:not(:last-child) {
+    margin-right: 12px;
+}
+
+.social-btn-tv {
+    background-position: -92px -194px;
+    opacity: 0.8;
+}
+
+.social-btn-inst {
+    background-position: -20px -152px;
+    opacity: 0.8;
+}
+
+.social-btn-vk {
+    background-position: -20px -20px;
+    opacity: 0.8;
+}
+
+.social-btn-fb {
+    background-position: -92px -80px;
+}
+
+.main-footer-details {
+    float: left;
+    width: 330px;
+    margin-left: 233px;
+    padding-top: 13px;
+    font-size: 0;
+}
+
+.main-footer-details a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.2)
+}
+
+.main-footer-details span {
+    color: #ffffff;
+}
+
+.main-footer-details a:first-child {
+    position: relative;
+    padding-right: 33px;
+    font-weight: 700;
+}
+
+.main-footer-details a:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 15px;
+    left: -23px;
+    top: 1px;
+    background-image: url("../img/heart.png");
+    background-repeat: no-repeat;
+}
+
+.main-footer-details a:nth-child(3) {
+    margin-right: 44px;
+}
+
+.main-footer-details a:hover {
+    color: rgba( 255, 204, 153, 0.3)
+}
+
+.main-footer-details a:active {
+    color: rgba( 255, 204, 153, 0.3)
+}
+
+.main-footer-details a:hover span {
+    color: #ffcc99;
+}
+
+.main-footer-details a:active span {
+    color: #ffcc99;
+}
+
+.main-footer-author {
+    float: right;
+}
+
+.main-footer-author p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.main-footer-author a {
+    color: rgba(255, 255, 255, 0.2)
+}
+
+.main-footer-author a span {
+    color: #ffffff;
+}
+
+.main-footer-author a:hover {
+    color: rgba( 255, 204, 153, 0.3)
+}
+
+.main-footer-author a:hover span {
+    color: #ffcc99;
+}
+
+.main-footer-author a:active {
+    color: rgba( 255, 204, 153, 0.3)
+}
+
+.main-footer-author a:active span {
+    color: #ffcc99;
+}
