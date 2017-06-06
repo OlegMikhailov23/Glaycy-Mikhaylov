@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Глейси каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-wrapper-cataog">
+        <div class="content-wrapper">
+            <header class="main-header clearfix">
+                <div class="header-logo">
+                    <a class="header-logo-link" href="#">Глейси</a>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="main-menu">
+                        <li class="main-menu-item"><a class="main-menu-item-link navigation-active"><span>Каталог</span></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a class="sub-menu-item-link" href="#">Новинки</a></li>
+                                <li class="sub-menu-item"><a class="sub-menu-item-link" href="#">Сливочное</a></li>
+                                <li class="sub-menu-item"><a class="sub-menu-item-link" href="#">Щербеты</a></li>
+                                <li class="sub-menu-item"><a class="sub-menu-item-link" href="#">Фруктовый лед</a></li>
+                                <li class="sub-menu-item"><a class="sub-menu-item-link" href="#">Мелорин</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item"><a class="main-menu-item-link" href="#"><span>Доставка и оплата</span></a></li>
+                        <li class="main-menu-item"><a class="main-menu-item-link" href="#"><span>О Компании</span></a></li>
+                    </ul>
+                </nav>
+                <div class="costumer-block">
+                    <button type="button" class="header-btn search-btn" title="Поиск">Поиск</button>
+                    <button type="button" class="header-btn signin-btn" title="Вход">Вход</button>
+                    <button type="button" class="header-btn basket-btn purchase" title="Корзина">2 товара</button>
+                </div>
+                <div class="header-info">
+                    <p>С 10 до 20, ежедневно</p>
+                    <b class="header-phon">8 812 450-25-25</b>
+                </div>
+            </header>
+            <main>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item"><a href="index.html"><span>Главная</span></a></li>
+                    <li class="breadcrumbs-item"><a href="catalog.html"><span>Каталог</span></a></li>
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-item-active"><span>Сливочное</span></a></li>
+                </ul>
+                <h1 class="catalog-header">Сливочное мороженое</h1>
+                <form method="post" action="#">
+                    <fieldset class="filter">
+                        <label class="sort" for="sort-list">Сортировка:
+                            <div class="select-container">
+                                <select name="sort-list" id="sort-list">
+                                    <option value="по популярности" selected>по популярности</option>
+                                    <option value="сначала недорогие">сначала недорогие</option>
+                                    <option value="по жирности">по жирности</option>
+                                </select>
+                            </div>
+                        </label>
+                        <div class="range-filter">
+                            <div class="price-controls">
+                                <label class="min-price"> Цена:
+                                    <input name="min-price" type="text" value="100"> руб.
+                                </label>
+                                <label class="max-price">
+                                    <input name="max-price" type="text" value="500"> руб.
+                                </label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </main>
+            <footer class="main-footer clearfix">
+                <div class="main-footer-social">
+                    <a class="social-btn social-btn-tv" href="#">Twitter</a>
+                    <a class="social-btn social-btn-inst" href="#">Instagram</a>
+                    <a class="social-btn social-btn-fb" href="#">VK</a>
+                    <a class="social-btn social-btn-vk" href="#">Face Book</a>
+                </div>
+                <div class="main-footer-details">
+                    <a href="#"><span>Для поставщиков</span></a>
+                    <a href="#"><span>Наши документы</span></a>
+                    <a href="#"><span>О производстве</span></a>
+                    <a href="#"><span>Экологические стандарты</span></a>
+                </div>
+                <div class="main-footer-author">
+                    <img src="img/logo-html.png" width="108" height="38" alt="HTML Academy">
+                    <p>Сделано в <a href="#"><span>HTML Academy</span></a> © 2017</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
