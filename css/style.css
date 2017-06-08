@@ -1018,10 +1018,10 @@ main .filter {
 
 .range-filter .range-controls {
     position: relative;
-    width: 220px;
+    width: 218px;
     height: 35px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.2)
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .range-controls .scale {
@@ -1058,6 +1058,158 @@ main .filter {
 .toggle-max {
     top: 7px;
     left: 60%;
+}
+
+.fat-percent {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    margin-left: 14px;
+    width: 415px;
+    border: none;
+}
+
+.fat-percent legend {
+    padding-bottom: 5px;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.fat-container {
+    width: 415px;
+    padding-top: 13px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: 35px;
+}
+
+.fat-percent label {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.fat-percent label:first-child {
+    padding-left: 44px;
+}
+
+.fat-percent label:not(:first-child) {
+    padding-left: 50px;
+}
+
+.fat-percent input[type="radio"] {
+    display: none;
+}
+
+.fat-percent input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -5px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.fat-percent input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.toping-field-container {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 48px;
+    width: 702px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.toping-field {
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-top: 15px;
+}
+
+.toping-field legend {
+    padding-bottom: 5px;
+    padding-left: 14px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.toping-field label {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.toping-field-container input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: 21px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+.toping-field-container input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    top: 2px;
+    left: 25px;
+    background-image: url("../img/check-on.png");
+    background-position: cente;
+    background-repeat: no-repeat;
+}
+
+.toping-field-container input[type="checkbox"]:first-of-type:checked + label::after {
+    left: -27px;
+}
+
+.toping-field-container input[type="checkbox"]:first-child + label::before {
+    left: -31px;
+}
+
+.toping-field-container label:not(:first-of-type) {
+    padding-left: 52px;
+}
+
+.toping-field input[type="checkbox"] {
+    display: none;
 }
 
 
