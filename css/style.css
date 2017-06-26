@@ -240,6 +240,7 @@ body > input[type="radio"] {
 }
 
 .costumer-block {
+    position: relative;
     float: right;
     padding-left: 8px;
     width: 270px;
@@ -280,8 +281,54 @@ body > input[type="radio"] {
     background-position: -157px -73px;
 }
 
+.search-form {
+    display: none;
+    position: absolute;
+    width: 340px;
+    height: 84px;
+    padding: 20px 15px;
+    left: -300px;
+    top: 58px;
+    background-color: #f8f7f4;
+    border-radius: 10px;
+}
+
+.search-form input {
+    width: 310px;
+    height: 45px;
+    padding-left: 15px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #333333;
+    outline: none;
+}
+
+.search-form input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.search-form input::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.search-form input:-ms-input-placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
 .costumer-block .search-btn:hover {
     background-position: -157px -130px;
+}
+
+.search-btn:hover .search-form {
+    display: block;
+    z-index: 100;
 }
 
 .signin-btn:hover::before {
