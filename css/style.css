@@ -1246,6 +1246,7 @@ main .filter {
 }
 
 .price-list {
+    position: relative;
     width: 100%;
     margin-top: 34px;
     font-size: 0;
@@ -1293,6 +1294,7 @@ main .filter {
 
 .price-list-item:hover {
     background-color: rgba( 255, 255, 255, 0.3);
+    box-shadow: 0 20px 20px 0 rgba( 0, 0, 0, 0.4);
     transform: scale(1.03);
     transition: background-color 0.3s ease,
                 0.2s ease;
@@ -1369,6 +1371,67 @@ main .filter {
     display: inline-block;
 }
 
+.price-list-paginator {
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+}
+
+.price-list-paginator a {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.price-list-paginator .page-number {
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.page-number:not(.page-active):hover {
+    background-color: rgba( 255, 255, 255, 0.2);
+}
+
+.price-list-paginator .page-number {
+    margin-right: 4px;
+}
+
+.price-list-paginator a:nth-of-type(2) {
+    margin-left: 13px;
+}
+
+.price-list-paginator .page-number:active {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.price-list-paginator .previous-page {
+    color: rgba( 255, 255, 255, 0.2);
+}
+
+.price-list-paginator .next-page {
+   margin-left: 10px; 
+}
+
+.price-list-paginator .page-active {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.bottom-line {
+    height: 1px;
+    margin-top: 55px;
+    background-color: rgba( 255, 255, 255, 0.3);
+}
 /*страница каталога*/
 
 .main-footer {
