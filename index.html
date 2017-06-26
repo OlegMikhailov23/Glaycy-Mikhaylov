@@ -35,8 +35,24 @@
                     </ul>
                 </nav>
                 <div class="costumer-block">
-                    <button type="button" class="header-btn search-btn" title="Поиск">Поиск</button>
-                    <button type="button" class="header-btn signin-btn" title="Вход">Вход</button>
+                    <div class="header-btn search-btn">Поиск
+                        <div class="search-form-container">
+                            <form class="search-form" action="#" method="get">
+                                <input type="text" name="search-text" id="search-text" placeholder="Что ищем?">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-btn signin-btn">Вход
+                        <div class="signin-form-container">
+                            <form class="signin-form" action="#" method="get">
+                                <input type="email" name="email" id="email" placeholder="Элктронная почта">
+                                <input type="password" name="password" id="password" placeholder="Пароль">
+                                <button class="login-btn" type="submit" name="login-btn" id="login-btn" title="Войти">Войти</button>
+                                <a class="signin-form-add-link" href="#">Забыли пароль?</a>
+                                <a class="signin-form-add-link" href="#">Новая регистрация</a>
+                            </form>
+                        </div>
+                    </div>
                     <button type="button" class="header-btn basket-btn" title="Корзина">Пусто</button>
                 </div>
                 <div class="header-info">
