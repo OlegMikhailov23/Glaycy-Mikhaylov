@@ -154,6 +154,11 @@ body > input[type="radio"] {
     font-family: inherit;
 }
 
+.sub-menu-item .sub-menu-active {
+    background-color: #d07058;
+    color: #ffffff;
+}
+
 .sub-menu-item:first-child a {
     border-radius: 5px 5px 0 0;
 }
@@ -162,7 +167,7 @@ body > input[type="radio"] {
     border-radius: 0 0 5px 5px;
 }
 
-.sub-menu-item a:hover {
+.sub-menu-item a:not(.sub-menu-active):hover {
     background-color: #ffcccc;
 }
 
@@ -1118,8 +1123,12 @@ main .filter {
     left: 13px;
     width: 20px;
     height: 20px;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 50%;
+}
+
+.fat-percent input[type="radio"] + label:hover::before {
+    border: 2px solid #ffffff;
 }
 
 .fat-percent input[type="radio"]:checked + label::after {
@@ -1184,6 +1193,10 @@ main .filter {
     left: 21px;
     border: 1px solid #ffffff;
     border-radius: 3px;
+}
+
+.toping-field-container input[type="checkbox"] + label:hover::before {
+    border: 2px solid #ffffff;
 }
 
 .toping-field-container input[type="checkbox"]:checked + label::after {
@@ -1261,14 +1274,14 @@ main .filter {
 
 .price-list-item {
     position: relative;
+    display: inline-block;
+    width: 293px;
+    height: 405px;
     padding-top: 2px;
     padding-left: 13px;
     padding-right: 13px;
     padding-bottom: 20px;
-    display: inline-block;
     vertical-align: top;
-    width: 293px;
-    height: 405px;
     border-radius: 5px;
 }
 
@@ -1338,9 +1351,10 @@ main .filter {
 
 .price-list-item-btn {
     display: none;
-    vertical-align: top;
+    vertical-align: bottom;
     margin-left: 35px;
     margin-top: 10px;
+    margin-bottom: px;
     padding: 9px 17px;
     background: #f26843;
     font-size: 18px;
@@ -1356,6 +1370,7 @@ main .filter {
     border-radius: 100px;
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
+
 
 .price-list-item-btn:hover {
     box-shadow: 0 2px 2px #990000;
