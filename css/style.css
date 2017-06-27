@@ -595,41 +595,6 @@ body > input[type="radio"] {
     color: #333333;
 }
 
-/*
-.modal-content-close {
-    position: absolute;
-    top: 50px;
-    right: 90px;
-    width: 22px;
-    height: 22px;
-    font-size: 0;
-    background-color: #ffffff;
-    outline: none;
-    border: 0;
-    cursor: pointer;
-}
-
-.modal-content-close::before,
-.modal-content-close::after {
-    left: 0px;
-    top: 9px;
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 4px;
-    background-color: #fecccd;
-    border-radius: 1px;
-}
-
-.modal-content-close::before {
-    transform: rotate(45deg);
-}
-
-.modal-content-close::after {
-    transform: rotate(-45deg);
-}
-*/
-
 .costumer-block .purchase::before {
     content: "";
     position: absolute;
