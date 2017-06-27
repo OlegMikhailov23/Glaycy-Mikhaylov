@@ -288,10 +288,12 @@ body > input[type="radio"] {
     left: -300px;
     top: 50px;
     z-index: 10;
+    cursor: default;
 }
 
 .search-btn:hover .search-form-container {
     display: block;
+    animation: sub-menu-bounce 0.3s;
 }
 
 .search-form {
@@ -340,8 +342,8 @@ body > input[type="radio"] {
     padding-top: 4px;
     left: -185px;
     top: 30px;
-    cursor: pointer;
     z-index: 10;
+    cursor: default;
 }
 
 .signin-form {
@@ -436,6 +438,7 @@ body > input[type="radio"] {
 
 .signin-btn:hover .signin-form-container {
     display: block;
+    animation: sub-menu-bounce 0.3s;
 }
 
 .costumer-block .search-btn:hover {
@@ -483,11 +486,149 @@ body > input[type="radio"] {
     width: 118px;
 }
 
+.basket-empty {
+      text-align: left;
+}
+
+.basket-btn .purchase-container {
+    display: block;
+    position: absolute;
+    width: 540px;
+    padding-top: 4px;
+    left: -424px;
+    top: 30px;
+    cursor: default;
+    z-index: 10;
+}
+
+.purchase-container .purchase-list {
+    display: block;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #333333;
+    background-color: #f8f7f4;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px 0 rgba( 0, 0, 0, 0.4);
+    text-align: right;
+}
+
+.purchase-list table {
+    border-collapse: collapse;
+}
+
+.purchase-list .purchase-list-item {
+    position: relative;
+}
+
+.purchase-list-item td {
+    vertical-align: top;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.purchase-list-item td:nth-child(2) {
+    padding-left: 15px;
+}
+
+.purchase-list-item td:not(:nth-child(2)) {
+    padding-top: 12px;
+}
+
+.purchase-list-item td:nth-child(3) {
+    width: 231px;
+    padding-left: 15px;
+}
+
+.purchase-list-item td:nth-child(4) {
+    width: 128px;
+    padding-left: 31px;
+}
+
+.purchase-list-item td:nth-child(5) {
+      padding-left: 30px;
+}
+
+.purchase-list-item:last-child {
+    border-bottom: 1px solid #cccccc;
+}
+
+.delete-goods {
+    position: relative;
+     width: 15px;
+     height: 15px;
+     background-color: #f8f7f4;
+     font-size: 0;
+     border: 0;
+     cursor: pointer;
+     outline: none;
+}
+
+.delete-goods::before,
+.delete-goods::after {
+    left: 2px;
+    top: 0px;
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    background-color: #666666;
+    border-radius: 1px;
+}
+
+.delete-goods::before {
+    transform: rotate(45deg);
+}
+
+.delete-goods::after {
+    transform: rotate(-45deg);
+}
+
 .costumer-block .purchase {
     position: relative;
     background-color: #ffffff;
     color: #333333;
 }
+
+/*
+.modal-content-close {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: #ffffff;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    left: 0px;
+    top: 9px;
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    background-color: #fecccd;
+    border-radius: 1px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+*/
 
 .costumer-block .purchase::before {
     content: "";
