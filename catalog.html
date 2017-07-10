@@ -94,7 +94,8 @@
                 <h1 class="catalog-header">Сливочное мороженое</h1>
                 <form method="post" action="#">
                     <fieldset class="filter">
-                        <label class="sort" for="sort-list">Сортировка:
+                        <div class="sort">
+                            <label for="sort-list">Сортировка:</label>
                             <div class="select-container">
                                 <select name="sort-list" id="sort-list">
                                     <option value="по популярности" selected>по популярности</option>
@@ -102,7 +103,7 @@
                                     <option value="по жирности">по жирности</option>
                                 </select>
                             </div>
-                        </label>
+                        </div>
                         <div class="range-filter">
                             <div class="price-controls">
                                 <label class="min-price"> Цена:
@@ -127,10 +128,10 @@
                                 <label for="0%">0%</label>
                                 <input type="radio" name="fat" value="10%" id="10%" checked>
                                 <label for="10%">до 10%</label>
-                                <input type="radio" name="fat" value="before 30%" id="before 30%">
-                                <label for="before 30%">до 30%</label>
-                                <input type="radio" name="fat" value="up 30%" id="up 30%">
-                                <label for="up 30%">выше 30%</label>
+                                <input type="radio" name="fat" value="before-30%" id="before-30%">
+                                <label for="before-30%">до 30%</label>
+                                <input type="radio" name="fat" value="up-30%" id="up-30%">
+                                <label for="up-30%">выше 30%</label>
                             </div>
                         </fieldset>
                         <fieldset class="toping-field">
