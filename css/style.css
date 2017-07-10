@@ -29,6 +29,7 @@ body > input[type="radio"] {
 }
 
 .site-wrapper {
+    position: relative;
     min-width: 1252px;
     background-color: #849d8f;
     background-image: url("../img/ice-cream1.png");
@@ -1941,6 +1942,10 @@ main .filter {
     animation: sub-menu-bounce 0.3s;
 }
 
+.modal-error {
+    animation: shake 0.6s;
+}
+
 .modal-content .feedback-form {
     position: relative;
 }
@@ -2155,6 +2160,45 @@ main .filter {
 
 .modal-content-close:hover::after {
     background: linear-gradient(to bottom, #d84732 0%, #e1603e 100%);
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.modal-background {
+    display: none;
+}
+
+.modal-background {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.7);
+    z-index: 50;
+}
+
+.modal-background-show {
+    display: block;
 }
 
 
