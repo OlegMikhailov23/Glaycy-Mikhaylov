@@ -456,8 +456,8 @@ body > input[type="radio"] {
     position: relative;
     padding-left: 45px;
     padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 6px;
 }
 
 .signin-btn::before {
@@ -760,6 +760,7 @@ body > input[type="radio"] {
 
 .header-info {
     position: absolute;
+    text-align: right;
     width: 170px;
     color: #ffffff;
     right: 0;
@@ -1380,6 +1381,23 @@ main .filter {
     left: 60%;
 }
 
+.min-price, .max-price {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.min-price input, .max-price input {
+    height: 18px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #ffffff;
+}
+
 .fat-percent {
     display: inline-block;
     vertical-align: top;
@@ -1401,8 +1419,8 @@ main .filter {
 }
 
 .fat-container {
-    width: 415px;
-    padding-top: 13px;
+    width: 416px;
+    padding-top: 11px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     height: 35px;
@@ -1417,12 +1435,12 @@ main .filter {
     cursor: pointer;
 }
 
-.fat-percent label:first-child {
-    padding-left: 44px;
+.fat-percent label:not(:first-of-type) {
+    padding-left: 50px;
 }
 
-.fat-percent label:not(:first-child) {
-    padding-left: 50px;
+.fat-container label:first-of-type {
+    padding-left: 44px;
 }
 
 .fat-percent input[type="radio"] {
@@ -1434,11 +1452,15 @@ main .filter {
     position: absolute;
     display: block;
     top: -5px;
-    left: 13px;
+    left: 19px;
     width: 20px;
     height: 20px;
     border: 1px solid #ffffff;
     border-radius: 50%;
+}
+
+.fat-percent input[type="radio"]:first-of-type + label::before {
+    left: 13px;
 }
 
 .fat-percent input[type="radio"] + label:hover::before {
@@ -1450,11 +1472,15 @@ main .filter {
     position: absolute;
     display: block;
     top: 0px;
-    left: 18px;
+    left: 24px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #ffffff;
+}
+
+.fat-percent input[type="radio"]:first-of-type:checked + label::after {
+    left: 18px;
 }
 
 .toping-field-container {
@@ -1548,7 +1574,7 @@ main .filter {
     margin-left: 14px;
     margin-top: 37px;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 4px;
     width: 143px;
     height: 35px;
     font-size: 16px;
@@ -1885,6 +1911,7 @@ main .filter {
 .main-footer-author p {
     padding: 0;
     margin: 0;
+    margin-top: -3px;
     font-size: 12px;
     line-height: 18px;
     color: #ffffff;
@@ -1990,13 +2017,13 @@ main .filter {
     color: transparent;
 }
 
-.modal-content input:focus::-moz-input-placeholder,
-.modal-content textarea:focus::-moz-input-placeholder {
+.modal-content input:focus::-moz-placeholder,
+.modal-content textarea:focus::-moz-placeholder {
     color: transparent;
 }
 
-.modal-content input:focus:-moz-input-placeholder,
-.modal-content textarea:focus:-moz-input-placeholder {
+.modal-content input:focus:-moz-placeholder,
+.modal-content textarea:focus:-moz-placeholder {
     color: transparent;
 }
 
