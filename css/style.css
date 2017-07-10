@@ -89,6 +89,7 @@ body > input[type="radio"] {
 
 .main-navigation .main-menu-item {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     font-size: 16px;
 }
@@ -699,7 +700,7 @@ body > input[type="radio"] {
     font-size: 60px;
     line-height: 61px;
     font-weight: 700;
-    width: 700px;
+    width: 730px;
     font-family: inherit;
     color: #ffffff;
 }
@@ -951,6 +952,7 @@ body > input[type="radio"] {
     padding: 25px 19px;
     border-radius: 15px;
     background: url("../img/waffel.png") no-repeat center;
+    background-color: #f2e7d3;
     background-size: 1147px 307px;
     font-size: 0;
 }
@@ -1069,6 +1071,7 @@ body > input[type="radio"] {
     margin-right: 26px;
     background-color: #ffffff;
     background-image: url("../img/strawsberry-bg.png");
+    background-color: #ffffff;
     background-repeat: no-repeat;
 }
 
@@ -1079,10 +1082,11 @@ body > input[type="radio"] {
 }
 
 .mailing input {
+    float: left;
     width: 368px;
     height: 44px;
     margin-top: 20px;
-    padding-left: 15px;
+    padding-left: 14px;
     font-size: 16px;
     line-height: 24px;
     border: 1px solid #999999;
@@ -1090,9 +1094,10 @@ body > input[type="radio"] {
 }
 
 .mailing button {
+    float: right;
     border: 0;
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 9px;
     padding: 10px 18px;
 }
 
@@ -1126,7 +1131,7 @@ body > input[type="radio"] {
     width: 1200px;
     height: 430px;
     background-image: url("../img/map.png");
-    border-color: #cccc99;
+    background-color: #cccc99;
     background-position: center;
     margin-left: -27px;
 }
@@ -1197,6 +1202,7 @@ main .breadcrumbs {
 
 .breadcrumbs li {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 16px;
 }
@@ -1259,6 +1265,7 @@ main .filter {
 
 .filter .sort {
     display: inline-block;
+    vertical-align: top;
     width: 195px;
     min-height: 60px;
     padding-left: 15px;
@@ -1381,7 +1388,8 @@ main .filter {
     left: 60%;
 }
 
-.min-price, .max-price {
+.min-price,
+.max-price {
     font-size: 14px;
     line-height: 16px;
     font-family: inherit;
@@ -1389,7 +1397,8 @@ main .filter {
     color: #ffffff;
 }
 
-.min-price input, .max-price input {
+.min-price input,
+.max-price input {
     height: 18px;
     font-size: 14px;
     line-height: 16px;
@@ -1496,6 +1505,7 @@ main .filter {
 
 .toping-field {
     display: inline-block;
+    vertical-align: top;
     padding: 0;
     margin: 0;
     width: 702px;
@@ -1667,6 +1677,7 @@ main .filter {
 
 .price-list-item .price-list-item-link {
     display: inline-block;
+    vertical-align: top;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1722,6 +1733,7 @@ main .filter {
 
 .price-list-item:hover .price-list-item-btn {
     display: inline-block;
+    vertical-align: top;
 }
 
 .price-list-paginator {
@@ -1952,7 +1964,6 @@ main .filter {
     position: absolute;
     text-align: left;
     width: 477px;
-    min-height: 440px;
     padding-top: 20px;
     padding-left: 24px;
     padding-right: 24px;
@@ -2010,6 +2021,16 @@ main .filter {
     font-weight: 700;
     color: #333333;
     outline: none;
+}
+
+.modal-content input:hover,
+.modal-content textarea:hover {
+    border-color: #6699cc;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #6699cc;
 }
 
 .modal-content input:focus::-webkit-input-placeholder,
